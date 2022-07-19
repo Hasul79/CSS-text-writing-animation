@@ -1,0 +1,43 @@
+
+/* Created by Hasmik Minasyan */
+
+
+body {
+    height:calc(50vh - 8em);
+    padding: 4em;
+    color: red;
+    font-family: arial;
+    background:black;
+
+}
+.text-animation {
+    position:relative ;
+    top: 50%;
+    width: 16em;
+    margin: 0 auto;
+    border-right: 2px solid green;
+    font-size: 25px;
+    text-align: center ;
+    white-space: nowrap ;
+    overflow: hidden ; 
+    transform: translateY (-50%);
+    animation:typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+ @keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12em;
+    }
+}
+@keyframes blinkTextCursor {
+    from {
+        border-right-color:yellow;
+    }
+    to {
+        border-right-color: transparent ;
+    }
+}
